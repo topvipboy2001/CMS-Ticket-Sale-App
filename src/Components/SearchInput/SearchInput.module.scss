@@ -1,0 +1,26 @@
+@import "../../Styles/color";
+
+.searchInput {
+  border-radius: 12px;
+  border: none;
+  height: 48px;
+
+  font-size: 16px;
+
+  input {
+    background-color: transparent;
+
+    &::-webkit-input-placeholder {
+      font-style: italic;
+    }
+    &:-moz-placeholder {
+      font-style: italic;
+    }
+    &::-moz-placeholder {
+      font-style: italic;
+    }
+    &:-ms-input-placeholder {
+      font-style: italic;
+    }
+  }
+}
