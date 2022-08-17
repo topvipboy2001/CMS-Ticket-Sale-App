@@ -4,12 +4,12 @@ import EllipsisIcon from "../../Assets/Icon/EllipsisIcon";
 import Status from "../../Components/Status/Status";
 import { formatDate } from "../../helper/formatDate";
 import { TicketTypes } from "../../State/ActionTypes/TicketTypes";
-import { defaultState } from "../../State/Reducers/TicketReducer";
+import { IdefaultState } from "../../State/Reducers/TicketReducer";
 import ModalChangeDateManageTicket from "./ModalChangeDateManageTicket";
 import styles from "./TableManage.module.scss";
 
 type TableManageTicketType = {
-  ticketsState: defaultState;
+  ticketsState: IdefaultState;
 };
 
 const { Column } = Table;

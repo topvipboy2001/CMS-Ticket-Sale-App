@@ -19,32 +19,32 @@ export type FilterInvoiceTicketType = {
   dateEnd: Date | string | null;
 };
 
-export interface InvoiceTicketLoading {
+export interface IInvoiceTicketLoading {
   type: typeof INVOICE_TICKET_LOADING;
 }
 
-export interface InvoiceTicketFail {
+export interface IInvoiceTicketFail {
   type: typeof INVOICE_TICKET_FAIL;
   error: Error;
 }
 
-export interface InvoiceTicketAddSuccess {
+export interface IInvoiceTicketAddSuccess {
   type: typeof INVOICE_TICKET_ADD_SUCCESS;
   payload: InvoiceTicketTypes;
 }
 
-export interface InvoiceTicketGetSuccess {
+export interface IInvoiceTicketGetSuccess {
   type: typeof INVOICE_TICKET_GET_SUCCESS;
   payload: InvoiceTicketTypes[];
 }
-export interface InvoiceTicketGetSuccessWithFilter {
+export interface IInvoiceTicketGetSuccessWithFilter {
   type: typeof INVOICE_TICKET_GET_SUCCESS_WITH_FILTER;
   payload: InvoiceTicketTypes[];
 }
 
 export type InvoiceTicketDispatchTypes =
-  | InvoiceTicketLoading
-  | InvoiceTicketFail
-  | InvoiceTicketAddSuccess
-  | InvoiceTicketGetSuccess
-  | InvoiceTicketGetSuccessWithFilter;
+  | IInvoiceTicketLoading
+  | IInvoiceTicketFail
+  | IInvoiceTicketAddSuccess
+  | IInvoiceTicketGetSuccess
+  | IInvoiceTicketGetSuccessWithFilter;

@@ -1,11 +1,11 @@
 import { Space, Table, Typography } from "antd";
 import React from "react";
 import { formatDate } from "../../helper/formatDate";
-import { defaultState } from "../../State/Reducers/InvoiceTicketReducer";
+import { IdefaultState } from "../../State/Reducers/InvoiceTicketReducer";
 import styles from "./TableInvoiceTicket.module.scss";
 
 type TableInvoiceTicketType = {
-  invoiceTicketState: defaultState;
+  invoiceTicketState: IdefaultState;
 };
 
 const { Column } = Table;

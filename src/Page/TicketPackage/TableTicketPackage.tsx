@@ -3,14 +3,14 @@ import React, { useState } from "react";
 import EditIcon from "../../Assets/Icon/EditIcon";
 import { formatDate } from "../../helper/formatDate";
 import { formatComboPrice, formatMoney } from "../../helper/formatPrice";
-import { defaultState } from "../../State/Reducers/TicketPackagesReducer";
+import { IdefaultState } from "../../State/Reducers/TicketPackagesReducer";
 import styles from "./TableTicketPackage.module.scss";
 import ModalUpdateTicketPackage from "./ModalUpdateTicketPackage";
 import { TicketPackageTypes } from "../../State/ActionTypes/TicketPackageTypes";
 import Status from "../../Components/Status/Status";
 
 type TableTicketPackageType = {
-  ticketPackagesState: defaultState;
+  ticketPackagesState: IdefaultState;
 };
 
 const { Column } = Table;

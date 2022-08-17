@@ -8,21 +8,21 @@ import {
   TICKET_UPDATE_DATE_SUCCESS,
 } from "../ActionTypes/TicketTypes";
 
-export interface defaultState {
+export interface IdefaultState {
   loading: boolean;
   error?: Error;
   current: TicketTypes[];
 }
 
-const initialState: defaultState = {
+const initialState: IdefaultState = {
   loading: false,
   current: [],
 };
 
 const TicketReducer = (
-  state: defaultState = initialState,
+  state: IdefaultState = initialState,
   action: TicketDispatchTypes,
-): defaultState => {
+): IdefaultState => {
   switch (action.type) {
     case TICKET_FAIL:
       return {

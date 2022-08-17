@@ -9,21 +9,21 @@ import {
   TICKET_PACKAGE_UPDATE_SUCCESS,
 } from "../ActionTypes/TicketPackageTypes";
 
-export interface defaultState {
+export interface IdefaultState {
   loading: boolean;
   error?: Error;
   current: TicketPackageTypes[];
 }
 
-const initialState: defaultState = {
+const initialState: IdefaultState = {
   loading: false,
   current: [],
 };
 
 const TicketPackageReducer = (
-  state: defaultState = initialState,
+  state: IdefaultState = initialState,
   action: TicketPackageDispatchTypes,
-): defaultState => {
+): IdefaultState => {
   switch (action.type) {
     case TICKET_PACKAGE_FAIL:
       return {

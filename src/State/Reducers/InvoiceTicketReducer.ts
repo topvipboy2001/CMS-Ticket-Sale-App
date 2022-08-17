@@ -7,20 +7,20 @@ import {
   INVOICE_TICKET_LOADING,
 } from "../ActionTypes/InvoiceTicketTypes";
 
-export interface defaultState {
+export interface IdefaultState {
   loading: boolean;
   error?: Error;
   current?: InvoiceTicketTypes[];
 }
 
-const initialState: defaultState = {
+const initialState: IdefaultState = {
   loading: false,
 };
 
 const InvoiceTicketReducer = (
-  state: defaultState = initialState,
+  state: IdefaultState = initialState,
   action: InvoiceTicketDispatchTypes,
-): defaultState => {
+): IdefaultState => {
   switch (action.type) {
     case INVOICE_TICKET_FAIL:
       return {

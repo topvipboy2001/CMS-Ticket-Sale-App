@@ -39,33 +39,33 @@ export type UpdateTicketPackageTypes = {
   eventCode: string | null;
 };
 
-export interface TicketPackageLoading {
+export interface ITicketPackageLoading {
   type: typeof TICKET_PACKAGE_LOADING;
 }
 
-export interface TicketPackageFail {
+export interface ITicketPackageFail {
   type: typeof TICKET_PACKAGE_FAIL;
   error: Error;
 }
 
-export interface TicketPackageAddSuccess {
+export interface ITicketPackageAddSuccess {
   type: typeof TICKET_PACKAGE_ADD_SUCCESS;
   payload: TicketPackageTypes;
 }
 
-export interface TicketPackageUpdateSuccess {
+export interface ITicketPackageUpdateSuccess {
   type: typeof TICKET_PACKAGE_UPDATE_SUCCESS;
   payload: TicketPackageTypes;
 }
 
-export interface TicketPackageGetSuccess {
+export interface ITicketPackageGetSuccess {
   type: typeof TICKET_PACKAGE_GET_SUCCESS;
   payload: TicketPackageTypes[];
 }
 
 export type TicketPackageDispatchTypes =
-  | TicketPackageLoading
-  | TicketPackageFail
-  | TicketPackageAddSuccess
-  | TicketPackageGetSuccess
-  | TicketPackageUpdateSuccess;
+  | ITicketPackageLoading
+  | ITicketPackageFail
+  | ITicketPackageAddSuccess
+  | ITicketPackageGetSuccess
+  | ITicketPackageUpdateSuccess;

@@ -27,39 +27,39 @@ export type TicketUpdateType = {
   dateUse: string | undefined;
 };
 
-export interface TicketLoading {
+export interface ITicketLoading {
   type: typeof TICKET_LOADING;
 }
 
-export interface TicketFail {
+export interface ITicketFail {
   type: typeof TICKET_FAIL;
   error: Error;
 }
 
-export interface TicketAddSuccess {
+export interface ITicketAddSuccess {
   type: typeof TICKET_ADD_SUCCESS;
   payload: TicketTypes;
 }
 
-export interface TicketGetSuccess {
+export interface ITicketGetSuccess {
   type: typeof TICKET_GET_SUCCESS;
   payload: TicketTypes[];
 }
 
-export interface TicketGetWithFilterSuccess {
+export interface ITicketGetWithFilterSuccess {
   type: typeof TICKET_GET_WITH_FILTER_SUCCESS;
   payload: TicketTypes[];
 }
 
-export interface TicketUpdateDateSuccess {
+export interface ITicketUpdateDateSuccess {
   type: typeof TICKET_UPDATE_DATE_SUCCESS;
   payload: TicketTypes;
 }
 
 export type TicketDispatchTypes =
-  | TicketLoading
-  | TicketFail
-  | TicketAddSuccess
-  | TicketGetSuccess
-  | TicketGetWithFilterSuccess
-  | TicketUpdateDateSuccess;
+  | ITicketLoading
+  | ITicketFail
+  | ITicketAddSuccess
+  | ITicketGetSuccess
+  | ITicketGetWithFilterSuccess
+  | ITicketUpdateDateSuccess;
